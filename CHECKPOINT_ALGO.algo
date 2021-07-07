@@ -1,0 +1,28 @@
+ALGORITHM checkpoint_alg
+VAR
+    S : STRING;
+    N=0;
+    V=0;
+    L=INTEGER;
+BEGIN
+    Read(S);
+    L=length(S);
+    write("Length of the sentence" L);
+    FOR i FROM 0 TO L STEP step  DO
+        
+        IF (S[i]= ' ') THEN
+            N=N+1;
+        END_IF
+       
+        SWITCH (S[i]) DO
+            a : V=V+1; break;
+            e : V=V+1; break;
+            i : V=V+1; break;
+            o : V=V+1; break;
+            y : V=V+1; break;
+            u : V=V+1; break;
+        END_SWITCH
+    END_FOR
+    write("The sentence contains" S "words")
+    write("number of voyels are : " V)    
+END
