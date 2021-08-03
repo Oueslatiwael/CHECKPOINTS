@@ -1,0 +1,46 @@
+ALGORITHM Grrr
+VAR
+    
+    Arr1 : ARRAY_OF INTEGER[]; 
+    Arr2 : ARRAY_OF INTEGER[]; 
+    N,V,S  : INTEGER ;
+    Arr3 : ARRAY_OF INTEGER[20]; 
+ 
+BEGIN
+  Read(N);
+  
+  FOR i FROM 0 TO N STEP step  DO
+      Read(Arr1[i]);
+      END_FOR
+  Read(V);
+  FOR j FROM 0 TO V STEP step  DO
+      Read(Arr2[j]);
+  END_FOR
+  FOR i FROM 0 TO N STEP step  DO
+      FOR j FROM 0 TO V STEP step  DO
+          IF (Arr1[i]=Arr2[j]) THEN
+              Arr3[k]:=Arr[i];
+              k++;
+          END_IF
+      END_FOR
+  END_FOR
+  S=0;
+FOR i FROM 0 TO k STEP step  DO
+  S=S+arr[k];
+    END_FOR
+    write('The sum is',S)
+END
+
+//Solution 2
+htab.insert(0,"zero")
+    htab.insert(1,"one");
+    htab.insert(2,"two");
+    htab.insert(3,"three");
+
+    htab.lookup(0); 
+    htab.lookup(5);
+
+    htab.get(0); 
+
+    htab.delete(0);
+
