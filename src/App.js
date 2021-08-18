@@ -8,8 +8,8 @@ import MyNavBar from "./componants/MyNavBar.js";
 function App() {
   return (
     <div className="App">
-     
-      <h1>REGISTRATION FORM</h1>
+     <MyNavBar />
+
       <MyForm />
 
         

@@ -1,9 +1,12 @@
 import React from 'react'
-import { Form ,Button, Row,Col} from "react-bootstrap";
+import { Form ,Button, Row,Col,Container} from "react-bootstrap";
 const MyForm = () => {
     return (
         <div>
+          <Container>
     <Form>
+    <h1>REGISTRATION FORM</h1>
+
   <Row className="mb-3">
     <Form.Group as={Col} controlId="formGridEmail">
       <Form.Label>Email</Form.Label>
@@ -54,7 +57,9 @@ const MyForm = () => {
     Submit
   </Button>
 </Form>
-        </div>
+        
+</Container>
+</div>
     )
 }
 
